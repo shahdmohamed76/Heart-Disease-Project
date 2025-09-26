@@ -72,3 +72,5 @@ Also plotted \*\*confusion matrices\*\* and a \*\*model comparison chart\*\*.
 \#\# 🚀 How to Run the Project  
 Clone the repository or extract the \`.zip/.rar\` file.
 
+pip install -r requirements.txt
+jupyter notebook
