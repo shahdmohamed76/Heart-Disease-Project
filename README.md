@@ -68,9 +68,42 @@ Also plotted \*\*confusion matrices\*\* and a \*\*model comparison chart\*\*.
 \- Combined them into a full pipeline (\`final\_pipeline.pkl\`) for reproducibility.
 
 \---
+Heart_Disease_Project/
+│── data/
+│   ├── heart_disease.csv
+│── notebooks/
+│   ├── 01_data_preprocessing.ipynb
+│   ├── 02_pca_analysis.ipynb
+│   ├── 03_feature_selection.ipynb
+│   ├── 04_supervised_learning.ipynb
+│   ├── 05_unsupervised_learning.ipynb
+│   ├── 06_hyperparameter_tuning.ipynb
+│── models/
+│   ├── final_model.pkl
+│── ui/
+│   ├── app.py   # (Optional Streamlit UI)
+│── deployment/
+│   ├── ngrok_setup.txt   # (Optional Ngrok instructions)
+│── results/
+│   ├── evaluation_metrics.txt
+│── README.md
+│── requirements.txt
+
 
 \#\# 🚀 How to Run the Project  
-Clone the repository or extract the \`.zip/.rar\` file.
-
+# Install dependencies
 pip install -r requirements.txt
+
+# Open Jupyter notebooks
 jupyter notebook
+
+# (Optional) Run the Streamlit app
+streamlit run ui/app.py
+
+
+### 🛠 Requirements
+- Python 3.8+
+- pandas, numpy, scikit-learn, matplotlib, seaborn
+- joblib
+- streamlit (optional)
+- ngrok (optional)
